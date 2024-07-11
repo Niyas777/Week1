@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="niyas.js">
+</head>
+<body>
+
+  <form onsubmit="return false">
+
+
+  </form>
+
+<script>
+  var kg = prompt("enter the kg");
+  var shipment = prompt("ener the shipment type");
+  function calculateShipment(kg,shipment){
+  var res = shipment == "standard" ? (5+ 0.1*kg):(10 + 0.2*kg);
+  document.getElementById("cool").innerText = res + " da you stupid bastard ";
+  }
+  
+
+
+ 
+
+</script>
+
+<button onclick="calculateShipment(kg,shipment)">check</button>
+<h1 id="cool"></h1>
+</body>
+
+<style>
+ h1{
+  color:red;
+  font-size: 50px;
+ }
+</style>
+</html>
